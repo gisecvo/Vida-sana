@@ -12,20 +12,6 @@ header {
     justify-content: space-between;
     padding: 1rem ;
     background-color: rgb(255, 255, 255);
-    
-    /* color de fondo -------------------------------*/
-    background-color: rgb(193, 237, 180);
-    border:rgb(26, 51, 21);
-    border-color: rgb(24, 26, 22);
-    border-width: 0px 0px 2px 0px;
-    border-radius: 10px;
-}
-
-.header-fondo{
-    background-image: linear-gradient(rgba(42, 163, 24, 0.83), rgba(30, 30, 1, 0.5)), url(./Imagenes/header-fondo.webp);
-    backdrop-filter: sepia(50%);
-    padding: 200px;
-    grid-area: cabeza;
 }
 
 /* Estilos del elemento .slide_img */
@@ -39,17 +25,18 @@ header {
 
 
 .logo {
-    max-width: 15rem;
+    max-width: 20rem;
     position: absolute;
     inset: 20px 0px 0px 20px;
 }
 
 .nav-list {
     display: flex;
+    align-items: center;
+    margin-right: 10px;
     list-style-type: none;
     gap: 1rem;
-    position: absolute;
-    inset: 20px 0px 0px 950px;
+    padding-top: 40px;
 }
 
 .nav-list li a {
@@ -63,28 +50,24 @@ header {
     }
 
 .buscar {
-    position:relative;
+     display: flex;
+    align-items: center;
 }
 
 .buscar input {
-    width: 0px;
+    width: 200px;
     height: 40px;
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
     padding: 0 20px;
     font-size: 18px;
     color: rgb(17, 18, 17);
     outline: none;
     border: 1px solid rgb(37, 158, 5);
     border-radius: 30px;
-    transition: all 0.6s ease;
 }
 
 .btn {
-    position:absolute;
-    top: 0;
-    right: 0;
-    margin-left: auto;
     background: rgb(37, 158, 85);
     width: 55px;
     height: 55px;
@@ -95,14 +78,6 @@ header {
     border-radius: 50%;
     cursor: pointer;
 }
-.buscar:hover input{
-    width: 240px;
-}
-
-.buscar input:focus{
-    width: 240px;
-}
-
 
 /* Estilos por defecto */
 .abrir-menu,
@@ -143,8 +118,10 @@ header {
    }
 
    .nav-list {
-        flex-direction: column;
-        align-items: end;
+       display: flex;
+       margin-right: 160px;
+       flex-direction:column;
+       align-items: end;
    }
 
 
